@@ -9,4 +9,12 @@
 #import "CaulyAdView.h"
 #import "CaulyAdSetting.h"
 
-void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *view, id delegate);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate);
+
+#ifdef __cplusplus
+}
+#endif

@@ -11,13 +11,13 @@
 #import "CaulyAdView.h"
 #import "CaulyAdSetting.h"
 
-void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *view, id delegate) {
+void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate) {
     CaulyAdSetting *setting = [CaulyAdSetting globalSetting];
     setting.appCode = appCode;
     setting.animType = CaulyAnimFadeOut;
 
     CaulyAdView *caulyView = [[CaulyAdView alloc] initWithParentViewController:parentViewController];
-    [view addSubview:caulyView];
+    [parentView addSubview:caulyView];
     caulyView.delegate = delegate;
     [caulyView startBannerAdRequest];
 }
