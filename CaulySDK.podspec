@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.resources = "library/DefaultImages/*.png"
   
   s.libraries = 'z', 'CaulyAds'
-  s.frameworks = 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MediaPlayer', 'MapKit', 'CoreLocation', 'CFNetwork', 'MessageUI', 'EventKit'
+  s.frameworks = 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MediaPlayer', 'MapKit', 'CoreLocation', 'CFNetwork', 'MessageUI', 'EventKit', 'StoreKit'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '${PODS_ROOT}/CaulySDK/library' }
 end
