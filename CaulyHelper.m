@@ -11,7 +11,7 @@
 #import "CaulyAdView.h"
 #import "CaulyAdSetting.h"
 
-void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate) {
+void CaulyQuickSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate) {
     CaulyAdSetting *setting = [CaulyAdSetting globalSetting];
     setting.appCode = appCode;
     setting.animType = CaulyAnimFadeOut;

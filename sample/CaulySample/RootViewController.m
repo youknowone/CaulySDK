@@ -32,10 +32,12 @@
     
     
     
+    
 
 	_adView = [[CaulyAdView alloc] initWithParentViewController:self];      //  CaulyAdView 객체 생성
 	[self.view addSubview:_adView];
 	_adView.delegate = self;                                                //  delegate 설정
+    _adView.showPreExpandableAd = TRUE;
 	[_adView startBannerAdRequest];                                         //  배너광고 요청
 }
 
@@ -52,7 +54,7 @@
 
 - (BOOL)shouldAutorotate
 {
-    return NO;
+    return YES;
 }
 
 
@@ -61,7 +63,7 @@
 	[super dealloc];
 }
 
-- (IBAction)interstialAdButtonAction:(id)sender {
+- (IBAction)interstialAdButtonAction:(id)sender {    
 	if(_interstitialAd)
 		return;
 	

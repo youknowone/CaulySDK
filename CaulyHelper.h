@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate);
+void CaulyQuickSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate);
 
 #ifdef __cplusplus
 }
