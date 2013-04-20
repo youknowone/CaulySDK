@@ -21,3 +21,8 @@ void CaulyGlobalSet(NSString *appCode, UIViewController *parentViewController, U
     caulyView.delegate = delegate;
     [caulyView startBannerAdRequest];
 }
+
+
+void CaulyQuickSet(NSString *appCode, UIViewController *parentViewController, UIView *parentView, id delegate) {
+    CaulyGlobalSet(appCode, parentViewController, parentView, delegate);
+}
