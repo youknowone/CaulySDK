@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CaulySDK"
-  s.version      = "3.0.2"
+  s.version      = "3.0.2.1"
   s.summary      = "Cauly SDK with helper."
   s.homepage     = "https://github.com/youknowone/CaulySDK"
   s.license      = {
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
      LICENSE
   }
   s.author       = "FuturestreamNetworks"
-  s.source       = { :git => "https://github.com/youknowone/CaulySDK.git", :tag => "3.0.2" }
+  s.source       = { :git => "https://github.com/youknowone/CaulySDK.git", :tag => "3.0.2.1" }
   s.platform     = :ios
   s.source_files = '*.{h,m}', 'library/*.h'
   s.public_header_files = '*.h', 'library/*.h'
